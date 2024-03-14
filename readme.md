@@ -1,6 +1,6 @@
 # Workshop Point Transformer with IntrA
 
-This repository aims to reproduce the results from https://github.com/radreports/IntrA-cerebral but using an simple adaptation of the Point transformer network from https://github.com/POSTECH-CVLab/point-transformer.
+This repository aims to reproduce the results from https://github.com/radreports/IntrA-cerebral but using a simple adaptation of the Point transformer network from https://github.com/POSTECH-CVLab/point-transformer.
 
 
 Install the requirements in a venv and change the wsl installation of cuda for your distribution
