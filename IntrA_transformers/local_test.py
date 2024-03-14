@@ -42,7 +42,7 @@ an_color = [0, 255, 0, 255]
 
 val_loader =  DataLoader(IntrADataGenerator(input_data_path,
                                             val_data, data_aug=True),
-                        shuffle=True,
+                        shuffle=False,
                         batch_size=1,
                         collate_fn=collate_fn,
                         num_workers=1)
@@ -109,7 +109,7 @@ for val_item in val_loader:
         else:
             mesh.visual.vertex_colors[index] = np.array(vessel_color)
 
-    mesh.show()
+    # mesh.show()
 
 ves_IoU = torch.mean(torch.Tensor(ves_IoU_val))
 ann_IoU = torch.mean(torch.Tensor(ann_IoU_val))
