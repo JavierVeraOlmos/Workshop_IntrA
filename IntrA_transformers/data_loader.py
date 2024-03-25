@@ -44,7 +44,7 @@ class IntrADataGenerator(Dataset):
 
         if self.data_aug:
             angle1 = random.uniform(0, math.pi)
-            rot_mat1 = trimesh.transformations.rotation_matrix(0.00001, [1,0,0], center)
+            rot_mat1 = trimesh.transformations.rotation_matrix(angle1, [1,0,0], center)
 
             angle2 = random.uniform(0, math.pi)
             rot_mat2 = trimesh.transformations.rotation_matrix(angle2, [0,1,0], center)
